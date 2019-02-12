@@ -8,7 +8,7 @@ function ac(amplitude=9,frequency=60,phases=3,phaseDegrees=120){
   points = []
 
   for(phase of new Array(phases).keys()){
-    points.push(amplitude * (Math.sin(2 * Math.PI * positionOfSecond + (phase * phaseRadians))))
+    points.push(amplitude * (Math.sin(2 * Math.PI * positionOfSecond * frequency + (phase * phaseRadians))))
   }
 
   return points

@@ -11,6 +11,6 @@ def ac(amplitude=9,frequency=60,seconds=2,phases=3,phase_degrees=120):
     points = []
 
     for phase in range(phases):
-        points.append(amplitude * (np.sin(2 * np.pi * second_position + (phase * phase_radians))))
+        points.append(amplitude * (np.sin(2 * np.pi * second_position * frequency + (phase * phase_radians))))
     
     return points
