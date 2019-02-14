@@ -1,4 +1,4 @@
-function ac(amplitude=9,frequency=60,phases=3,phaseDegrees=120){
+function ac(amplitude=110,frequency=60,phases=3,phaseDegrees=120){
 
   timeStamp = Date.now()
   positionOfSecond = (timeStamp / 1000) - parseInt(timeStamp / 1000)
